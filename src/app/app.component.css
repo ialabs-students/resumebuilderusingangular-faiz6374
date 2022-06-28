@@ -1,0 +1,45 @@
+
+*{
+ font-family: "Times New Roman", Times, serif;
+}
+
+.background{
+ background-image: url("../assets/images/03.jpg");
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+
+   table {
+       width: 100%;
+       border: 1px solid gray;
+   }
+   td {
+       text-align: center;
+       height: 40px;
+       border: 1px solid gray;
+   }
+   thead {
+       background-color: #fff;
+   }
+   tr:nth-child(even) {
+       background-color: #fff;
+   }
+
+   .card{
+     padding: 25px;
+   }
+
+   .card-img-top {
+     width: 92%;
+ }
+
+ .card-body {
+   -ms-flex: 1 1 auto;
+   flex: 1 1 auto;
+   padding: 0.5rem;
+}
+
+.card-img-top {
+ width: 90%;
+}
+

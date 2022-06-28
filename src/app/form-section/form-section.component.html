@@ -1,0 +1,419 @@
+<!-- <h2>Resume Builder</h2>
+<div  *ngIf="!showResume" class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <form action="" id ="regForm" (submit)="saveFormData()">
+
+                <div class="row">
+                    <div class="from-group col-md-4">
+                        <label for="fname"> First Name</label>
+                        <input id="fname" type="text" name="fname" class="form-control"
+                        [(ngModel)] = "formData.firstName">
+                    </div>
+                    <div class="from-group col-md-4">
+                        <label for="mname"> Middle Name</label>
+                        <input id="mname" type="text" name="mname" class="form-control"
+                        [(ngModel)] = "formData.middleName">
+                    </div>
+                    <div class="from-group col-md-4">
+                        <label for="lname"> Last Name</label>
+                        <input id="lname" type="text" name="lname" class="form-control"
+                        [(ngModel)] = "formData.lastName">
+                    </div>
+                </div>
+                <hr>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-success m-2">Submit</button>
+                    <button type="reset" class="btn btn-warning m-2">Reset</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div> -->
+
+<form action="" id="regForm"  (submit)="saveFormData()">
+  <div id="resume_builder_form">
+
+      <h3 class="text-center">Build Your Resume Here!!</h3>
+
+    <div class="container">
+
+      <h4>Enter Your Basic Information:</h4>
+
+      <div  *ngIf="!showResume" class="container">
+        <div class="row">
+          <div class="col-md-8">
+      <div class="card">
+      <table class="table table-primary table-hover" width="1000">
+        <tr>
+          <td><label> Enter First Name: </label></td>
+
+          <td><input type="text" id="fName" name="fName" [(ngModel)] = "formData.firstName">/>
+          </td>
+
+          <td><label> Enter Last Name: </label></td>
+
+          <td><input type="text" id="lName" name="lName" [(ngModel)] = "formData.lastName"> /></td>
+        </tr>
+
+        <tr>
+          <td><label> Enter Email Id: </label></td>
+
+          <td><input type="email" id="email" name="email" /></td>
+
+          <td><label> Enter Mobile Number: </label></td>
+
+          <td><input type="number"  id="number" name="number" /></td>
+        </tr>
+
+        <tr>
+          <td><label> Enter Date of Birth: </label></td>
+
+          <td><input type="date"  id="dob" name="dob" /></td>
+
+          <td><label> Enter Gender: </label></td>
+
+          <td>
+            <select name="gender" id="gender" name="gender">
+
+              <option value="">-select-</option>
+
+              <option value="Male">Male</option>
+
+              <option value="Female">Female</option>
+
+              <option value="Other">Other</option>
+              </select
+            >
+          </td>
+
+        </tr>
+
+      </table>
+    </div>
+  </div>
+
+<div class="col-md-4">
+
+  <div class="card">
+    <img
+src="../assets/images/pic1.jpeg"
+alt="default logo"
+class="img-logo"
+id="imgT">
+    <form action="/action_page.php">
+      <label for="">select profile picture</label>
+      <input type="file" id="myFile" name="filename">
+      <input type="submit">
+    </form>
+    <div class="card-body">
+      <h5 class="card-title">Frontend Developer</h5>
+      <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+      <!-- <a href="#!" class="btn btn-primary">Button</a> -->
+    </div>
+  </div>
+
+
+</div>
+  </div>
+      <br>
+
+      <h4>Education Details:</h4>
+
+      <div class="card">
+      <table class="table table-primary table-hover" width="1000">
+        <thead>
+          <tr>
+            <th>Education:</th>
+
+            <th>School/University:</th>
+
+            <th>Year of Passing:</th>
+
+            <th>Percentage:</th>
+          </tr>
+        </thead>
+
+        <tr>
+          <td>Post Graduation:</td>
+
+          <td>
+            <input
+              type="text"
+              name="University1"
+              placeholder="Enter School/University"
+            />
+          </td>
+
+          <td>
+            <input
+              type="number"
+              name="YearofPassing1"
+              placeholder="Enter Year of Passing"
+            />
+          </td>
+
+          <td>
+            <input
+              type="text"
+              name="Percentage1"
+              placeholder="Enter Percentage"
+            />
+          </td>
+        </tr>
+
+        <tr>
+          <td>Graduation:</td>
+
+          <td>
+            <input
+            class="form-control" id="textAreaExample5"
+              type="text"
+              name="University2"
+              placeholder="Enter School/University"
+              id="college" name="college"
+
+            />
+          </td>
+
+          <td>
+            <input
+              type="number"
+              name="YearofPassing2"
+              placeholder="Enter Year of Passing"
+            />
+          </td>
+
+          <td>
+            <input
+              type="text"
+              name="Percentage2"
+              placeholder="Enter Percentage"
+            />
+          </td>
+        </tr>
+
+        <tr>
+          <td>Intermidiate:</td>
+
+          <td>
+            <input
+              type="text"
+              name="University3"
+              placeholder="Enter School/University"
+            />
+          </td>
+
+          <td>
+            <input
+              type="number"
+              name="YearofPassing3"
+              placeholder="Enter Year of Passing"
+            />
+          </td>
+
+          <td>
+            <input
+              type="text"
+              name="Percentage3"
+              placeholder="Enter Percentage"
+            />
+          </td>
+        </tr>
+
+        <tr>
+          <td>Heigh School:</td>
+
+          <td>
+            <input
+              type="text"
+              name="University3"
+              placeholder="Enter School/University"
+            />
+          </td>
+
+          <td>
+            <input
+              type="number"
+              name="YearofPassing3"
+              placeholder="Enter Year of Passing"
+            />
+          </td>
+
+          <td>
+            <input
+              type="text"
+              name="Percentage3"
+              placeholder="Enter Percentage"
+            />
+          </td>
+        </tr>
+      </table>
+    </div>
+
+      <br>
+
+      <h4>Enter Your Experiance:</h4>
+
+      <div class="card">
+      <table class="table table-primary table-hover" width="1000">
+        <thead>
+          <tr>
+            <th>Organization:</th>
+
+            <th>Joining Date:</th>
+
+            <th>Releaving Date:</th>
+          </tr>
+        </thead>
+
+        <tr>
+          <td>
+            <input
+              type="text"
+              name="Organization1"
+              placeholder="Enter Organization"
+            />
+          </td>
+
+          <td>
+            <input
+              type="date"
+              name="Joining Date1"
+              placeholder="Enter Joining Date"
+            />
+          </td>
+
+          <td>
+            <input
+              type="date"
+              name="Releaving Date1"
+              placeholder="Enter Releaving Date"
+            />
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <input
+              type="text"
+              name="Organization2"
+              placeholder="Enter Organization"
+            />
+          </td>
+
+          <td>
+            <input
+              type="date"
+              name="Joining Date2"
+              placeholder="Enter Joining Date"
+            />
+          </td>
+
+          <td>
+            <input
+              type="date"
+              name="Releaving Date2"
+              placeholder="Enter Releaving Date"
+            />
+          </td>
+
+        </tr>
+
+      </table>
+    </div>
+
+      <br>
+
+      <h4>Enter Your Experiance:</h4>
+
+      <div class="card">
+      <table class="table table-primary table-hover" width="1000">
+
+        <thead>
+
+          <tr>
+
+            <th>Technology:</th>
+
+            <th>Version Worked on:</th>
+
+            <th>Last Worked on:</th>
+
+            <th>Rating:</th>
+
+          </tr>
+
+          <tbody><tr>
+            <td> <input type="text" name="tech1" placeholder="Enter Technology"> </td>
+            <td> <input type="text" name="version1" placeholder="Enter Version Worked On"> </td>
+            <td> <select name="lastworkedon1">
+                    <option value="0">-select- </option>
+                    <option value="1">Last Month </option>
+                    <option value="2">Within 6 months </option>
+                    <option value="3">Before 6 Months </option>
+                </select>
+            </td>
+            <td> <input type="number" max="10" name="rate1" placeholder="Rate yourself out of 10"> </td>
+        </tr>
+        <tr>
+            <td> <input type="text" name="tech2" placeholder="Enter Technology"> </td>
+            <td> <input type="text" name="version2" placeholder="Enter Version Worked On"> </td>
+            <td> <select name="lastworkedon2">
+                    <option value="0">-select- </option>
+                    <option value="1">Last Month </option>
+                    <option value="2">Within 6 months </option>
+                    <option value="3">Before 6 Months </option>
+                </select>
+            </td>
+            <td> <input type="number" max="10" name="rate2" placeholder="Rate yourself out of 10"> </td>
+        </tr>
+
+    </tbody>
+
+
+
+      </table>
+    </div>
+
+<br>
+
+    <div class="form-outline w-100 mb-4">
+      <h4>Languages</h4>
+      <textarea class="form-control" id="textAreaExample5" id="language" name="language" rows="3"></textarea>
+      <label class="form-label" for="textAreaExample5"></label>
+    </div>
+
+    <div class="form-outline w-100 mb-4">
+      <h4>Technical Skills</h4>
+      <textarea class="form-control" id="textAreaExample5" id="skils" name="skils" rows="3"></textarea>
+      <label class="form-label" for="textAreaExample5"></label>
+    </div>
+    <div class="form-outline w-100 mb-4">
+      <h4>Professional Summary</h4>
+      <textarea class="form-control" id="summary" name="summary" id="textAreaExample5" name="description" rows="3"></textarea>
+      <label class="form-label" for="textAreaExample5"></label>
+    </div>
+    <div class="form-outline w-100 mb-4">
+      <h4>Certification</h4>
+      <textarea class="form-control" id="textAreaExample5" name="description" rows="3"></textarea>
+      <label class="form-label" for="textAreaExample5"></label>
+    </div>
+
+
+
+<!--  <h4>Describe Yourself:</h4><textarea name="description" width="1000px" height="200px" placeholder="Enter you wishdom"></textarea> -->
+
+
+<!--  <h4>Describe Yourself:</h4><textarea name="description" width="1000px" height="200px" placeholder="Enter you wishdom"></textarea>                <h4>Declaration:</h4>                <textarea name="description" width="1000px" height="200px" placeholder="Enter you wishdom"></textarea>                                     -->
+
+<div class="text-center" style="padding: 10px;">
+<button type="reset" class="btn btn-info">Reset</button>
+
+<button class="btn btn-success" type="submit">Submit</button>
+</div>
+
+
+</div>
+
+<app-resume-preview *ngIf="showResume" ></app-resume-preview>
